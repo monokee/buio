@@ -1,0 +1,137 @@
+@import "utilities/variables";
+
+html {
+  background: $neutral-250;
+  color: $neutral-600;
+  touch-action: manipulation;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: $neutral-fff;
+}
+
+strong {
+  color: $neutral-800;
+}
+
+a, a:visited {
+  position: relative;
+  touch-action: manipulation;
+  color: var(--blue-650);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    text-decoration: underline;
+    border: 0;
+    outline: 0;
+  }
+}
+
+mark {
+  background: $gradient-blue-medium;
+  color: $neutral-fff;
+}
+
+::selection,
+::-moz-selection {
+  background: $blue-400;
+  color: $neutral-fff;
+  text-shadow: none;
+}
+
+pre {
+  position: relative;
+  background: $neutral-200;
+  white-space: pre;
+  word-wrap: break-word;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1fr min-content;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "lab cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt"
+    "lab cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt"
+    "lab cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt";
+
+  label {
+    grid-area: lab;
+    font-family: "proxima-nova", "Roboto", "Helvetica", sans-serif;
+    font-weight: bold;
+    line-height: 1.8;
+    font-size: $fontSize-100;
+    color: $neutral-800;
+    opacity: 1;
+    margin-left: -$fontSize-000;
+    padding: 0 $fontSize-200;
+    text-align: center;
+  }
+
+  code {
+    grid-area: cnt;
+    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    padding: 0 $fontSize-300;
+    border-radius: 0;
+    border-left: 1px solid $neutral-350;
+    font-size: 1em;
+  }
+}
+
+pre, code, kbd, samp {
+  background: $neutral-200;
+  color: $neutral-600;
+  border-radius: $radius-100;
+  padding: $fontSize-000;
+  font-size: 0.75em;
+  line-height: 2.25;
+}
+
+blockquote {
+  position: relative;
+  font-style: italic;
+  font-size: $fontSize-300;
+  color: $neutral-800;
+  padding: 2rem 0 1.5rem 4.25rem;
+  border-radius: $radius-100;
+  &::before {
+    content: "\201C";
+    color: $neutral-400;
+    font-size: 7rem;
+    position: absolute;
+    left: -0.5rem;
+    top: 4rem;
+  }
+}
+
+hr {
+  border-color: $neutral-400;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+thead,
+tfoot {
+  background: $neutral-150;
+  color: $neutral-900;
+  font-size: $fontSize-000;
+}
+
+td {
+  padding: $fontSize-000;
+}
+
+tbody tr:nth-child(even) {
+  background: $neutral-225;
+}

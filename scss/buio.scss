@@ -1,0 +1,146 @@
+@import "utilities/variables";
+@import "utilities/functions";
+@import "reset";
+@import "base";
+@import "inputs";
+@import "text";
+@import "animations";
+@import "scrollbar";
+@import "buttons";
+
+:root {
+
+  // SPACE
+  --space-000: #{$space-000};
+  --space-050: #{$space-050};
+  --space-100: #{$space-100};
+  --space-150: #{$space-150};
+  --space-200: #{$space-200};
+  --space-250: #{$space-250};
+  --space-300: #{$space-300};
+  --space-350: #{$space-350};
+  --space-400: #{$space-400};
+  --space-450: #{$space-450};
+  --space-500: #{$space-500};
+  --space-550: #{$space-550};
+  --space-600: #{$space-600};
+  --space-650: #{$space-650};
+  --space-700: #{$space-700};
+  --space-750: #{$space-750};
+  --space-800: #{$space-800};
+  --space-850: #{$space-850};
+  --space-900: #{$space-900};
+
+  // COLORS
+  --red-000: #{$red-000};
+  --red-100: #{$red-100};
+  --red-200: #{$red-200};
+  --red-300: #{$red-300};
+  --red-400: #{$red-400};
+  --red-500: #{$red-500};
+  --red-600: #{$red-600};
+  --red-700: #{$red-700};
+  --red-800: #{$red-800};
+  --red-900: #{$red-900};
+  --red-fff: #{$red-fff};
+
+  --purple-000: #{$purple-000};
+  --purple-100: #{$purple-100};
+  --purple-200: #{$purple-200};
+  --purple-300: #{$purple-300};
+  --purple-400: #{$purple-400};
+  --purple-500: #{$purple-500};
+  --purple-600: #{$purple-600};
+  --purple-700: #{$purple-700};
+  --purple-800: #{$purple-800};
+  --purple-900: #{$purple-900};
+  --purple-fff: #{$purple-fff};
+
+  --green-000: #{$green-000};
+  --green-100: #{$green-100};
+  --green-200: #{$green-200};
+  --green-300: #{$green-300};
+  --green-400: #{$green-400};
+  --green-500: #{$green-500};
+  --green-600: #{$green-600};
+  --green-700: #{$green-700};
+  --green-800: #{$green-800};
+  --green-900: #{$green-900};
+  --green-fff: #{$green-fff};
+
+  --yellow-000: #{$yellow-000};
+  --yellow-100: #{$yellow-100};
+  --yellow-200: #{$yellow-200};
+  --yellow-300: #{$yellow-300};
+  --yellow-400: #{$yellow-400};
+  --yellow-500: #{$yellow-500};
+  --yellow-600: #{$yellow-600};
+  --yellow-700: #{$yellow-700};
+  --yellow-800: #{$yellow-800};
+  --yellow-900: #{$yellow-900};
+  --yellow-fff: #{$yellow-fff};
+
+  --blue-000: #{$blue-000};
+  --blue-050: #{$blue-050};
+  --blue-100: #{$blue-100};
+  --blue-150: #{$blue-150};
+  --blue-200: #{$blue-200};
+  --blue-250: #{$blue-250};
+  --blue-300: #{$blue-300};
+  --blue-350: #{$blue-350};
+  --blue-400: #{$blue-400};
+  --blue-450: #{$blue-450};
+  --blue-500: #{$blue-500};
+  --blue-550: #{$blue-550};
+  --blue-600: #{$blue-600};
+  --blue-650: #{$blue-650};
+  --blue-700: #{$blue-700};
+  --blue-750: #{$blue-750};
+  --blue-800: #{$blue-800};
+  --blue-850: #{$blue-850};
+  --blue-900: #{$blue-900};
+  --blue-950: #{$blue-950};
+  --blue-fff: #{$blue-fff};
+
+  --neutral-000: #{$neutral-000};
+  --neutral-050: #{$neutral-050};
+  --neutral-100: #{$neutral-100};
+  --neutral-150: #{$neutral-150};
+  --neutral-200: #{$neutral-200};
+  --neutral-250: #{$neutral-250};
+  --neutral-300: #{$neutral-300};
+  --neutral-350: #{$neutral-350};
+  --neutral-400: #{$neutral-400};
+  --neutral-450: #{$neutral-450};
+  --neutral-500: #{$neutral-500};
+  --neutral-550: #{$neutral-550};
+  --neutral-600: #{$neutral-600};
+  --neutral-650: #{$neutral-650};
+  --neutral-700: #{$neutral-700};
+  --neutral-750: #{$neutral-750};
+  --neutral-800: #{$neutral-800};
+  --neutral-850: #{$neutral-850};
+  --neutral-900: #{$neutral-900};
+  --neutral-950: #{$neutral-950};
+  --neutral-fff: #{$neutral-fff};
+
+  // FONT SIZES
+  --fontSize-000: #{$fontSize-000};
+  --fontSize-100: #{$fontSize-100};
+  --fontSize-200: #{$fontSize-200};
+  --fontSize-300: #{$fontSize-300};
+  --fontSize-400: #{$fontSize-400};
+  --fontSize-500: #{$fontSize-500};
+  --fontSize-600: #{$fontSize-600};
+  --fontSize-700: #{$fontSize-700};
+  --fontSize-800: #{$fontSize-800};
+  --fontSize-900: #{$fontSize-900};
+
+  // SHADOWS
+  --shadow-100: #{$shadow-100};
+  --shadow-200: #{$shadow-200};
+  --shadow-300: #{$shadow-300};
+  --shadow-400: #{$shadow-400};
+  --shadow-500: #{$shadow-500};
+
+}
