@@ -143,4 +143,9 @@
   --shadow-400: #{$shadow-400};
   --shadow-500: #{$shadow-500};
 
+  // CUSTOM CURSORS
+  --cursor-move-x: #{$cursor-move-x};
+  --cursor-move-y: #{$cursor-move-y};
+  --cursor-crosshair: #{$cursor-crosshair};
+
 }

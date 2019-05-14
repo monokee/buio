@@ -6,10 +6,6 @@ html {
   touch-action: manipulation;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: $neutral-fff;
@@ -23,6 +19,7 @@ a, a:visited {
   position: relative;
   touch-action: manipulation;
   color: var(--blue-650);
+
   text-decoration: none;
   cursor: pointer;
   &:hover {
