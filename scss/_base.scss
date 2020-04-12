@@ -19,7 +19,6 @@ a, a:visited {
   position: relative;
   touch-action: manipulation;
   color: var(--blue-650);
-
   text-decoration: none;
   cursor: pointer;
   &:hover {
@@ -33,7 +32,7 @@ a, a:visited {
 }
 
 mark {
-  background: $gradient-blue-medium;
+  background: $gradient-medium-blue;
   color: $neutral-fff;
 }
 

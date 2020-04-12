@@ -1,0 +1,70 @@
+.flex-row,
+.flex-col {
+
+  display: flex;
+
+  &.center {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+}
+
+.flex-row {
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &.x-left { justify-content: flex-start }
+  &.x-right { justify-content: flex-end }
+  &.x-center { justify-content: center }
+  &.x-around { justify-content: space-around }
+  &.x-between { justify-content: space-between }
+  &.x-evenly { justify-content: space-evenly }
+
+  &.y-top { align-items: flex-start; align-content: flex-start; }
+  &.y-center { align-items: center; align-content: center; }
+  &.y-bottom { align-items: flex-end; align-content: flex-end; }
+  &.y-around { align-items: center; align-content: space-around; }
+  &.y-between { align-items: center; align-content: space-between; }
+  &.y-evenly { align-items: center; align-content: space-evenly; }
+  &.y-stretch { align-items: stretch; align-content: stretch; }
+  &.y-baseline { align-items: baseline; align-content: flex-start; }
+
+}
+
+.flex-col {
+
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  &.y-top { justify-content: flex-start }
+  &.y-bottom { justify-content: flex-end }
+  &.y-center { justify-content: center }
+  &.y-around { justify-content: space-around }
+  &.y-between { justify-content: space-between }
+  &.y-evenly { justify-content: space-evenly }
+
+  &.x-left { align-items: flex-start; align-content: flex-start; }
+  &.x-center { align-items: center; align-content: center; }
+  &.x-right { align-items: flex-end; align-content: flex-end; }
+  &.x-around { align-items: center; align-content: space-around; }
+  &.x-between { align-items: center; align-content: space-between; }
+  &.x-evenly { align-items: center; align-content: space-evenly; }
+  &.x-stretch { align-items: stretch; align-content: stretch; }
+  &.x-baseline { align-items: baseline; align-content: flex-start; }
+
+}

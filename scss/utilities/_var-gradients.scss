@@ -1,9 +1,26 @@
 @import "var-colors";
 
-$gradient-blue-dark: linear-gradient(135deg, $blue-000 0%, $neutral-000 100%);
-$gradient-blue-medium: linear-gradient(175deg, $blue-500 0%, $blue-350 100%);
-$gradient-blue-light: linear-gradient(135deg, hsl(210, 100%, 56%) 0%, hsl(210, 80%, 60%) 100%);
+$gradient-dark-red: linear-gradient(135deg, $red-000 0%, $neutral-000 100%);
+$gradient-dark-purple: linear-gradient(135deg, $purple-000 0%, $neutral-000 100%);
+$gradient-dark-green: linear-gradient(135deg, $green-000 0%, $neutral-000 100%);
+$gradient-dark-yellow: linear-gradient(135deg, $yellow-000 0%, $neutral-000 100%);
+$gradient-dark-blue: linear-gradient(135deg, $blue-000 0%, $neutral-000 100%);
+$gradient-dark-neutral: linear-gradient(135deg, $neutral-100 0%, $neutral-000 100%);
 
-$gradient-yellow-dark: linear-gradient(135deg, $yellow-000 0%, $neutral-000 100%);
-$gradient-red-dark: linear-gradient(135deg, $red-000 0%, $neutral-000 100%);
-$gradient-green-dark: linear-gradient(135deg, $green-000 0%, $neutral-000 100%);
+$gradient-medium-red: linear-gradient(175deg, $red-600 0%, $red-400 100%);
+$gradient-medium-purple: linear-gradient(175deg, $purple-600 0%, $purple-400 100%);
+$gradient-medium-green: linear-gradient(175deg, $green-500 0%, $green-300 100%);
+$gradient-medium-yellow: linear-gradient(175deg, $yellow-400 0%, $yellow-300 100%);
+$gradient-medium-blue: linear-gradient(175deg, $blue-500 0%, $blue-350 100%);
+$gradient-medium-neutral: linear-gradient(175 deg, $neutral-450 0%, $neutral-400 100%);
+
+$gradient-light-red: linear-gradient(135deg, $red-700 0%, $red-800 100%);
+$gradient-light-purple: linear-gradient(135deg, $purple-700 0%, $purple-800 100%);
+$gradient-light-green: linear-gradient(135deg, $green-600 0%, $green-700 100%);
+$gradient-light-yellow: linear-gradient(135deg, $yellow-600 0%, $yellow-700 100%);
+$gradient-light-blue: linear-gradient(135deg, hsl(210, 100%, 56%) 0%, hsl(210, 80%, 60%) 100%);
+$gradient-light-neutral: linear-gradient(135deg, $neutral-600 0%, $neutral-700 100%);
+
+$gradient-cyan-purple: linear-gradient(0deg, #6962C2 0, #0AA6EA 100%);
+$gradient-green-cyan: linear-gradient(0deg, #0CAAE6 0, #ACCC4C 100%);
+$gradient-orange-pink: linear-gradient(0deg, #E75EFC 0, #F05D30 100%);

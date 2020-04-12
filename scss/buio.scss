@@ -1,35 +1,14 @@
 @import "utilities/variables";
 @import "utilities/functions";
+@import "utilities/classes";
 @import "reset";
 @import "base";
 @import "inputs";
 @import "text";
-@import "animations";
 @import "scrollbar";
 @import "buttons";
 
 :root {
-
-  // SPACE
-  --space-000: #{$space-000};
-  --space-050: #{$space-050};
-  --space-100: #{$space-100};
-  --space-150: #{$space-150};
-  --space-200: #{$space-200};
-  --space-250: #{$space-250};
-  --space-300: #{$space-300};
-  --space-350: #{$space-350};
-  --space-400: #{$space-400};
-  --space-450: #{$space-450};
-  --space-500: #{$space-500};
-  --space-550: #{$space-550};
-  --space-600: #{$space-600};
-  --space-650: #{$space-650};
-  --space-700: #{$space-700};
-  --space-750: #{$space-750};
-  --space-800: #{$space-800};
-  --space-850: #{$space-850};
-  --space-900: #{$space-900};
 
   // COLORS
   --red-000: #{$red-000};
@@ -124,17 +103,69 @@
   --neutral-950: #{$neutral-950};
   --neutral-fff: #{$neutral-fff};
 
+  // GRADIENTS
+  --gradient-dark-red: #{$gradient-dark-red};
+  --gradient-dark-purple: #{$gradient-dark-purple};
+  --gradient-dark-green: #{$gradient-dark-green};
+  --gradient-dark-yellow: #{$gradient-dark-yellow};
+  --gradient-dark-blue: #{$gradient-dark-blue};
+  --gradient-dark-neutral: #{$gradient-dark-neutral};
+
+  --gradient-medium-red: #{$gradient-medium-red};
+  --gradient-medium-purple: #{$gradient-medium-purple};
+  --gradient-medium-green: #{$gradient-medium-green};
+  --gradient-medium-yellow: #{$gradient-medium-yellow};
+  --gradient-medium-blue: #{$gradient-medium-blue};
+  --gradient-medium-neutral: #{$gradient-medium-neutral};
+
+  --gradient-light-red: #{$gradient-light-red};
+  --gradient-light-purple: #{$gradient-light-purple};
+  --gradient-light-green: #{$gradient-light-green};
+  --gradient-light-yellow: #{$gradient-light-yellow};
+  --gradient-light-blue: #{$gradient-light-blue};
+  --gradient-light-neutral: #{$gradient-light-neutral};
+
+  --gradient-cyan-purple: #{$gradient-cyan-purple};
+  --gradient-green-cyan: #{$gradient-green-cyan};
+  --gradient-orange-pink: #{$gradient-orange-pink};
+
+  // SPACE
+  --space-000: #{$space-000};
+  --space-050: #{$space-050};
+  --space-100: #{$space-100};
+  --space-150: #{$space-150};
+  --space-200: #{$space-200};
+  --space-250: #{$space-250};
+  --space-300: #{$space-300};
+  --space-350: #{$space-350};
+  --space-400: #{$space-400};
+  --space-450: #{$space-450};
+  --space-500: #{$space-500};
+  --space-550: #{$space-550};
+  --space-600: #{$space-600};
+  --space-650: #{$space-650};
+  --space-700: #{$space-700};
+  --space-750: #{$space-750};
+  --space-800: #{$space-800};
+  --space-850: #{$space-850};
+  --space-900: #{$space-900};
+
   // FONT SIZES
-  --fontSize-000: #{$fontSize-000};
-  --fontSize-100: #{$fontSize-100};
-  --fontSize-200: #{$fontSize-200};
-  --fontSize-300: #{$fontSize-300};
-  --fontSize-400: #{$fontSize-400};
-  --fontSize-500: #{$fontSize-500};
-  --fontSize-600: #{$fontSize-600};
-  --fontSize-700: #{$fontSize-700};
-  --fontSize-800: #{$fontSize-800};
-  --fontSize-900: #{$fontSize-900};
+  --font-size-000: #{$fontSize-000};
+  --font-size-100: #{$fontSize-100};
+  --font-size-200: #{$fontSize-200};
+  --font-size-300: #{$fontSize-300};
+  --font-size-400: #{$fontSize-400};
+  --font-size-500: #{$fontSize-500};
+  --font-size-600: #{$fontSize-600};
+  --font-size-700: #{$fontSize-700};
+  --font-size-800: #{$fontSize-800};
+  --font-size-900: #{$fontSize-900};
+
+  // FONT TYPES
+  --font-type-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-type-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-type-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   // SHADOWS
   --shadow-100: #{$shadow-100};
@@ -143,9 +174,25 @@
   --shadow-400: #{$shadow-400};
   --shadow-500: #{$shadow-500};
 
-  // CUSTOM CURSORS
-  --cursor-move-x: #{$cursor-move-x};
-  --cursor-move-y: #{$cursor-move-y};
-  --cursor-crosshair: #{$cursor-crosshair};
+  // RADII
+  --radius-000: #{$radius-000};
+  --radius-100: #{$radius-100};
+  --radius-200: #{$radius-200};
+  --radius-300: #{$radius-300};
+  --radius-400: #{$radius-400};
+  --radius-500: #{$radius-500};
+  --radius-pill: #{$pill};
+  --radius-round: #{$round};
+
+  // Durations
+  --duration-100: #{$duration-100};
+  --duration-200: #{$duration-200};
+  --duration-300: #{$duration-300};
+
+  // CURVES
+  --curve-move-out: #{$curve-move-out};
+  --curve-move-in: #{$curve-move-in};
+  --curve-fade-out: #{$curve-fade-out};
+  --curve-fade-in: #{$curve-fade-in};
 
 }

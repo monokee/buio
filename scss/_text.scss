@@ -1,11 +1,10 @@
 @import "utilities/variables";
 @import "utilities/functions";
-@import url("https://use.typekit.net/uje3ita.css"); // Proxima Nova (Typekit)
 
 // 1. Fluid Typography and vertical rhythm
 html {
   @include fluid-type(font-size, $minFont, $maxFont);
-  font-family: 'proxima-nova', 'Roboto', 'Helvetica', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

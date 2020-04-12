@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" href="buio.min.css">
+    <link rel="stylesheet" href="css/buio.css">
     <title>BUIO CSS Demo</title>
     <style>
         #app {
@@ -12,16 +12,11 @@
             margin: 5% auto;
         }
         .color-row {
-            display: flex;
-            flex-wrap: nowrap;
-            width: 100%;
-            height: var(--fontSize-800);
+            height: var(--font-size-800);
             margin-bottom: var(--space-050);
         }
         .color-row div {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: auto;
+            flex: 1 1 auto;
             margin-left: var(--space-050);
         }
     </style>
@@ -35,7 +30,7 @@
 
     <h3>Color Palettes</h3>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--neutral-000)"></div>
         <div style="background-color: var(--neutral-050)"></div>
         <div style="background-color: var(--neutral-100)"></div>
@@ -59,7 +54,7 @@
         <div style="background-color: var(--neutral-fff)"></div>
     </div>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--blue-000)"></div>
         <div style="background-color: var(--blue-050)"></div>
         <div style="background-color: var(--blue-100)"></div>
@@ -83,7 +78,7 @@
         <div style="background-color: var(--blue-fff)"></div>
     </div>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--purple-000)"></div>
         <div style="background-color: var(--purple-100)"></div>
         <div style="background-color: var(--purple-200)"></div>
@@ -97,7 +92,7 @@
         <div style="background-color: var(--purple-fff)"></div>
     </div>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--red-000)"></div>
         <div style="background-color: var(--red-100)"></div>
         <div style="background-color: var(--red-200)"></div>
@@ -111,7 +106,7 @@
         <div style="background-color: var(--red-fff)"></div>
     </div>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--yellow-000)"></div>
         <div style="background-color: var(--yellow-100)"></div>
         <div style="background-color: var(--yellow-200)"></div>
@@ -125,7 +120,7 @@
         <div style="background-color: var(--yellow-fff)"></div>
     </div>
 
-    <div class="color-row">
+    <div class="color-row flex-row">
         <div style="background-color: var(--green-000)"></div>
         <div style="background-color: var(--green-100)"></div>
         <div style="background-color: var(--green-200)"></div>
