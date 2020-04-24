@@ -60,7 +60,7 @@ pre {
 
   label {
     grid-area: lab;
-    font-family: "proxima-nova", "Roboto", "Helvetica", sans-serif;
+    font-family: var(--font-type-sans);
     font-weight: bold;
     line-height: 1.8;
     font-size: $fontSize-100;
@@ -73,7 +73,7 @@ pre {
 
   code {
     grid-area: cnt;
-    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    font-family: var(--font-type-mono);
     padding: 0 $fontSize-300;
     border-radius: 0;
     border-left: 1px solid $neutral-350;

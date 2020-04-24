@@ -32,7 +32,7 @@ textarea {
   border: 1px solid transparent;
   border-radius: $radius-100;
   background-color: hsla(223, 10%, 27%, 0.35);
-  font-family: inherit;
+  font-family: var(--font-type-sans);
   font-size: 16px;
   padding: 14px;
   margin: 4px 0;
@@ -50,14 +50,7 @@ textarea {
     outline: 0;
     border-color: $blue-350;
   }
-  &:-webkit-autofill,
-  &:-webkit-autofill:hover,
-  &:-webkit-autofill:focus {
-    outline: 0!important;
-    -webkit-box-shadow: 0 0 0 999px hsla(220, 35%, 29%, 0.35) inset!important;
-    -webkit-text-fill-color: $blue-800!important;
-    transition: background-color 9999s linear 0s!important;
-  }
+
 }
 
 // Dropdown
@@ -113,12 +106,11 @@ input[type=color] {
 // Autofill
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active  {
+input:-webkit-autofill:focus {
   outline: 0;
   -webkit-box-shadow: 0 0 0 999px hsla(220, 35%, 29%, 0.35) inset!important;
   -webkit-text-fill-color: $blue-800!important;
-  transition: background-color 0s linear 9999s;
+  transition: background-color 9999s;
 }
 
 // Input Group
