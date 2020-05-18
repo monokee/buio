@@ -5,20 +5,55 @@
 
 /* Layout Modifiers */
 
-.full-width {
-  width: 100%;
-}
-
-.full-height {
-  height: 100%;
-}
-
 .pos-rel {
   position: relative;
 }
 
 .pos-abs {
   position: absolute;
+}
+
+/* Size Modifiers */
+
+$mods: (
+  "width": "w",
+  "height": "h"
+);
+
+@each $mod, $shortMod in $mods {
+
+  // Percentage based sizes
+  .#{$shortMod}-full {
+    #{$mod}: 100%;
+  }
+  .#{$shortMod}-half {
+    #{$mod}: 50%;
+  }
+  .#{$shortMod}-third {
+    #{$mod}: 33.3333333333%;
+  }
+  .#{$shortMod}-fourth {
+    #{$mod}: 25%;
+  }
+  .#{$shortMod}-fifth {
+    #{$mod}: 20%;
+  }
+
+  // spacing based sizes
+  @each $space, $value in $spaces {
+    .#{$shortMod}-#{$space} {
+      #{$mod}: #{$value};
+    }
+  }
+
+}
+
+/* Font Size Modifiers */
+
+@each $fontSize, $value in $fontSizes {
+  .txt-#{$fontSize} {
+    font-size: #{$value};
+  }
 }
 
 /* Spacing Modifiers */
@@ -34,6 +69,34 @@ $sides: (
   "bottom": "b",
   "left": "l"
 );
+
+// Margin auto classes
+.mg-auto {
+  margin: auto;
+}
+.mg-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mg-y-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@each $side, $shortSide in $sides {
+  .mg-#{$shortSide}-auto {
+    margin-#{$side}: auto;
+  }
+}
+
+// Margin/Padding for all sides
+@each $mod, $shortMod in $mods {
+  @each $space, $value in $spaces {
+    .#{$shortMod}-#{$space} {
+      #{$mod}: $value;
+    }
+  }
+}
 
 // Margin/Padding for x/y
 @each $mod, $shortMod in $mods {
@@ -57,6 +120,29 @@ $sides: (
         #{$mod}-#{$side}: $value;
       }
     }
+  }
+}
+
+// Border Radius
+@each $radius, $value in $radii {
+  .rounded-#{$radius} {
+    border-radius: #{$value};
+  }
+  .rounded-top-#{$radius} {
+    border-top-left-radius: #{$value};
+    border-top-right-radius: #{$value};
+  }
+  .rounded-right-#{$radius} {
+    border-top-right-radius: #{$value};
+    border-bottom-right-radius: #{$value};
+  }
+  .rounded-bottom-#{$radius} {
+    border-bottom-left-radius: #{$value};
+    border-bottom-right-radius: #{$value};
+  }
+  .rounded-left-#{$radius} {
+    border-top-left-radius: #{$value};
+    border-top-right-radius: #{$value};
   }
 }
 
