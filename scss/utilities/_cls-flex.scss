@@ -21,6 +21,29 @@
     flex-wrap: wrap-reverse;
   }
 
+  .self-fit {
+    flex: 1 1 auto;
+  }
+  .self-grow {
+    flex: 1 0 auto;
+  }
+  .self-shrink {
+    flex: 0 1 auto;
+  }
+
+  .push-top {
+    margin-top: auto;
+  }
+  .push-right {
+    margin-right: auto;
+  }
+  .push-bottom {
+    margin-bottom: auto;
+  }
+  .push-left {
+    margin-left: auto;
+  }
+
 }
 
 .flex-row {

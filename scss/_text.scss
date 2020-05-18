@@ -15,6 +15,60 @@ body, p {
   line-height: $baseLine;
 }
 
+a, a:visited {
+  position: relative;
+  touch-action: manipulation;
+  color: var(--neutral-fff);
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity var(--duration-100);
+  &:hover {
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  &:focus {
+    text-decoration: underline;
+    border: 0;
+    outline: 0;
+    opacity: 0.75;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: var(--neutral-fff);
+}
+
+h1 > img, h1 > svg, h2 > img, h2 > svg, h3 > img, h3 > svg, h4 > img, h4 > svg, h5 > img, h5 > svg, h6 > img, h6 > svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: sub;
+}
+
+strong, b {
+  color: var(--neutral-800);
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+sup,
+sub,
+small {
+  font-size: var(--font-size-000);
+}
+
+pre,
+code,
+kbd,
+samp  {
+  font-family: var(--font-type-mono);
+  font-size: 1em;
+}
+
 article {
 
   user-select: text;

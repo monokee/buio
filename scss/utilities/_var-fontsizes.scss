@@ -46,13 +46,15 @@ $h6-max: 18px;
 }
 
 // Assume 16px base
-$fontSize-000: 0.75rem;
-$fontSize-100: 0.875rem;
-$fontSize-200: 1rem;
-$fontSize-300: 1.125rem;
-$fontSize-400: 1.25rem;
-$fontSize-500: 1.5rem;
-$fontSize-600: 1.875rem;
-$fontSize-700: 2.25rem;
-$fontSize-800: 3rem;
-$fontSize-900: 3.75rem;
+$fontSizes: (
+  "000": 0.75rem,
+  "100": 0.875rem,
+  "200": 1rem,
+  "300": 1.125rem,
+  "400": 1.25rem,
+  "500": 1.5rem,
+  "600": 1.875rem,
+  "700": 2.25rem,
+  "800": 3rem,
+  "900": 3.75rem
+);

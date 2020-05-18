@@ -1,0 +1,37 @@
+nav {
+
+  a, a:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-fff);
+    opacity: 1;
+    background-color: rgba(0,0,0,0);
+    transition-property: opacity, background-color;
+    transition-duration: var(--duration-100);
+    will-change: opacity, background-color;
+
+    &:hover {
+      opacity: 0.75;
+      background-color: rgba(0,0,0,.35);
+    }
+
+  }
+
+  &.flex-row {
+    a, a:visited {
+      height: 100%;
+      padding-left: var(--space-200);
+      padding-right: var(--space-200);
+    }
+  }
+
+  &.flex-col {
+    a, a:visited {
+      width: 100%;
+      padding-top: var(--space-200);
+      padding-bottom: var(--space-200);
+    }
+  }
+
+}

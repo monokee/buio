@@ -8,33 +8,18 @@ hr {
   overflow: visible;
 }
 
-pre,
-code,
-kbd,
-samp  {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
 
-b,
-strong {
-  font-weight: bolder;
-}
-
-small {
-  font-size: 80%;
+*:focus {
+  outline: 0;
 }
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
@@ -56,11 +41,6 @@ textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-}
-
-button,
-input {
-  overflow: visible;
 }
 
 button,

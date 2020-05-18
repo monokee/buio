@@ -1,9 +1,12 @@
-$duration-100: 100ms;
-$duration-200: 200ms;
-$duration-300: 300ms;
+$durations: (
+  "100": 100ms,
+  "200": 200ms,
+  "300": 300ms
+);
 
-$curve-move-in: cubic-bezier(.5,.3,0,1);
-$curve-move-out: cubic-bezier(.5,0,1,.7);
-
-$curve-fade-in: ease-out;
-$curve-fade-out: ease-in-out;
+$curves: (
+  "move-in": cubic-bezier(.5,.3,0,1),
+  "move-out": cubic-bezier(.5,0,1,.7),
+  "fade-in": ease-out,
+  "fade-out": ease-in-out
+);

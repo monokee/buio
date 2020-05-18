@@ -1,7 +1,8 @@
 @import "utilities/variables";
 
 :root {
-  --tooltip-height: 25px;
+  --tooltip-height: calc(2em + var(--font-size-000)); // padding y + font-size
+  --tooltip-max-width: 250px;
   --tooltip-margin: 0.5em;
   --tooltip-background: var(--neutral-100);
   --tooltip-color: var(--neutral-fff);
@@ -12,28 +13,26 @@
 [data-tooltip-bottom],
 [data-tooltip-left] {
 
-  position: relative;
-  text-decoration: none;
-  font-size: 72px;
-
   &::after {
     position: absolute;
     z-index: 100;
     opacity: 0;
     content: '';
     height: var(--tooltip-height);
-    max-width: 100%;
+    max-width: var(--tooltip-max-width);
     padding: 0.5em 1em;
     font-size: var(--font-size-000);
     text-align: center;
     color: var(--tooltip-color);
     background: var(--tooltip-background);
-    border-radius: $radius-100;
-    box-shadow: $shadow-100;
+    border-radius: var(--radius-100);
+    box-shadow: var(--shadow-100);
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
     box-sizing: border-box;
+    pointer-events: none;
+    will-change: transform, opacity;
   }
 
   &:hover::after {
@@ -56,6 +55,7 @@
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     left: 50%;
+    top: 0;
     transform: translate3d(-50%, calc(var(--tooltip-height) * -1), 0);
   }
   &:hover::after {
@@ -70,6 +70,7 @@
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     top: 50%;
+    left: 100%;
     transform: translate3d(0, -50%, 0);
   }
   &:hover::after {

@@ -1,51 +1,30 @@
 @import "utilities/variables";
 
 html {
-  background: $neutral-250;
-  color: $neutral-600;
+  background: var(--neutral-250);
+  color: var(--neutral-600);
   touch-action: manipulation;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  color: $neutral-fff;
-}
-
-strong {
-  color: $neutral-800;
-}
-
-a, a:visited {
-  position: relative;
-  touch-action: manipulation;
-  color: var(--blue-650);
-  text-decoration: none;
-  cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:focus {
-    text-decoration: underline;
-    border: 0;
-    outline: 0;
-  }
+ul, ol {
+  list-style: none;
 }
 
 mark {
-  background: $gradient-medium-blue;
-  color: $neutral-fff;
+  background: var(--gradient-medium-blue);
+  color: var(--neutral-fff);
 }
 
 ::selection,
 ::-moz-selection {
-  background: $blue-400;
-  color: $neutral-fff;
+  background: var(--blue-400);
+  color: var(--neutral-fff);
   text-shadow: none;
 }
 
 pre {
   position: relative;
-  background: $neutral-200;
+  background: var(--neutral-200);
   white-space: pre;
   word-wrap: break-word;
   overflow: auto;
@@ -63,29 +42,29 @@ pre {
     font-family: var(--font-type-sans);
     font-weight: bold;
     line-height: 1.8;
-    font-size: $fontSize-100;
-    color: $neutral-800;
+    font-size: var(--font-size-100);
+    color: var(--neutral-800);
     opacity: 1;
-    margin-left: -$fontSize-000;
-    padding: 0 $fontSize-200;
+    margin-left: calc(var(--font-size-000) * -1);
+    padding: 0 var(--font-size-200);
     text-align: center;
   }
 
   code {
     grid-area: cnt;
     font-family: var(--font-type-mono);
-    padding: 0 $fontSize-300;
+    padding: 0 var(--font-size-300);
     border-radius: 0;
-    border-left: 1px solid $neutral-350;
+    border-left: 1px solid var(--neutral-350);
     font-size: 1em;
   }
 }
 
 pre, code, kbd, samp {
-  background: $neutral-200;
-  color: $neutral-600;
-  border-radius: $radius-100;
-  padding: $fontSize-000;
+  background: var(--neutral-200);
+  color: var(--neutral-600);
+  border-radius: var(--radius-100);
+  padding: var(--font-size-000);
   font-size: 0.75em;
   line-height: 2.25;
 }
@@ -93,13 +72,13 @@ pre, code, kbd, samp {
 blockquote {
   position: relative;
   font-style: italic;
-  font-size: $fontSize-300;
-  color: $neutral-800;
+  font-size: var(--font-size-300);
+  color: var(--neutral-800);
   padding: 2rem 0 1.5rem 4.25rem;
-  border-radius: $radius-100;
+  border-radius: var(--radius-100);
   &::before {
     content: "\201C";
-    color: $neutral-400;
+    color: var(--neutral-400);
     font-size: 7rem;
     position: absolute;
     left: -0.5rem;
@@ -108,7 +87,7 @@ blockquote {
 }
 
 hr {
-  border-color: $neutral-400;
+  border-color: var(--neutral-400);
 }
 
 table {
@@ -119,15 +98,15 @@ table {
 
 thead,
 tfoot {
-  background: $neutral-150;
-  color: $neutral-900;
-  font-size: $fontSize-000;
+  background: var(--neutral-150);
+  color: var(--neutral-900);
+  font-size: var(--font-size-000);
 }
 
 td {
-  padding: $fontSize-000;
+  padding: var(--font-size-000);
 }
 
 tbody tr:nth-child(even) {
-  background: $neutral-225;
+  background: var(--neutral-225);
 }
