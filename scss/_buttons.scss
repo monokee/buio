@@ -7,6 +7,8 @@ input[type=reset],
 .button {
   display: inline-block;
   position: relative;
+  width: max-content;
+  height: max-content;
   font-size: var(--font-size-100);
   font-weight: 400;
   border-radius: var(--radius-100);
@@ -24,7 +26,7 @@ input[type=reset],
   text-overflow: ellipsis;
   cursor: pointer;
   filter: brightness(1);
-  transition-property: opacity, border-color, color, filter;
+  transition-property: opacity, color, filter;
   transition-duration: var(--duration-200);
 
   a, span, p, i {
@@ -68,9 +70,6 @@ input[type=reset],
     padding: calc(0.75em - 2px) calc(1.5em - 2px);
     &.small {
       padding: calc(0.5em - 2px) calc(1em - 2px);
-    }
-    &:hover {
-      border-color: var(--neutral-450);
     }
     &:active:hover {
       background: transparent;
@@ -123,7 +122,7 @@ input[type=reset],
     filter: saturate(20%);
     box-shadow: none;
     cursor: default;
-    opacity: 0.25;
+    opacity: 0.4;
     pointer-events: none;
   }
 

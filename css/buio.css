@@ -838,6 +838,12 @@ input[type=reset],
 .button {
   display: inline-block;
   position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   font-size: var(--font-size-100);
   font-weight: 400;
   border-radius: var(--radius-100);
@@ -857,10 +863,10 @@ input[type=reset],
   cursor: pointer;
   -webkit-filter: brightness(1);
           filter: brightness(1);
-  -webkit-transition-property: opacity, border-color, color, -webkit-filter;
-  transition-property: opacity, border-color, color, -webkit-filter;
-  transition-property: opacity, border-color, color, filter;
-  transition-property: opacity, border-color, color, filter, -webkit-filter;
+  -webkit-transition-property: opacity, color, -webkit-filter;
+  transition-property: opacity, color, -webkit-filter;
+  transition-property: opacity, color, filter;
+  transition-property: opacity, color, filter, -webkit-filter;
   -webkit-transition-duration: var(--duration-200);
           transition-duration: var(--duration-200); }
   button a, button span, button p, button i,
@@ -941,12 +947,6 @@ input[type=reset],
     input[type=reset].secondary.small,
     .button.secondary.small {
       padding: calc(0.5em - 2px) calc(1em - 2px); }
-    button.secondary:hover,
-    input[type=button].secondary:hover,
-    input[type=submit].secondary:hover,
-    input[type=reset].secondary:hover,
-    .button.secondary:hover {
-      border-color: var(--neutral-450); }
     button.secondary:active:hover,
     input[type=button].secondary:active:hover,
     input[type=submit].secondary:active:hover,
@@ -1033,7 +1033,7 @@ input[type=reset],
     -webkit-box-shadow: none;
             box-shadow: none;
     cursor: default;
-    opacity: 0.25;
+    opacity: 0.4;
     pointer-events: none; }
 
 @-webkit-keyframes btn-pulse {
