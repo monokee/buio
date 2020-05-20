@@ -838,9 +838,6 @@ input[type=reset],
 .button {
   display: inline-block;
   position: relative;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
