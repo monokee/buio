@@ -6,43 +6,45 @@
 /* Layout Modifiers */
 
 .pos-rel {
-  position: relative;
+  position: relative!important;
 }
 
 .pos-abs {
-  position: absolute;
+  position: absolute!important;
 }
 
 /* Size Modifiers */
 
 $mods: (
   "width": "w",
-  "height": "h"
+  "height": "h",
+  "max-width": "mw",
+  "max-height": "mh"
 );
 
 @each $mod, $shortMod in $mods {
 
   // Percentage based sizes
   .#{$shortMod}-full {
-    #{$mod}: 100%;
+    #{$mod}: 100%!important;
   }
   .#{$shortMod}-half {
-    #{$mod}: 50%;
+    #{$mod}: 50%!important;
   }
   .#{$shortMod}-third {
-    #{$mod}: 33.3333333333%;
+    #{$mod}: 33.3333333333%!important;
   }
   .#{$shortMod}-fourth {
-    #{$mod}: 25%;
+    #{$mod}: 25%!important;
   }
   .#{$shortMod}-fifth {
-    #{$mod}: 20%;
+    #{$mod}: 20%!important;
   }
 
   // spacing based sizes
   @each $space, $value in $spaces {
     .#{$shortMod}-#{$space} {
-      #{$mod}: #{$value};
+      #{$mod}: #{$value}!important;
     }
   }
 
@@ -52,7 +54,7 @@ $mods: (
 
 @each $fontSize, $value in $fontSizes {
   .txt-#{$fontSize} {
-    font-size: #{$value};
+    font-size: #{$value}!important;
   }
 }
 
@@ -72,42 +74,42 @@ $sides: (
 
 // Margin auto classes
 .mg-auto {
-  margin: auto;
+  margin: auto!important;
 }
 .mg-x-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto!important;
+  margin-right: auto!important;
 }
 .mg-y-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: auto!important;
+  margin-bottom: auto!important;
 }
 
 @each $side, $shortSide in $sides {
   .mg-#{$shortSide}-auto {
-    margin-#{$side}: auto;
+    margin-#{$side}: auto!important;
   }
 }
 
 // Margin/Padding for all sides
 @each $mod, $shortMod in $mods {
-  @each $space, $value in $spaces {
-    .#{$shortMod}-#{$space} {
-      #{$mod}: $value;
+  @each $fluidSpace, $value in $fluidSpaces {
+    .#{$shortMod}-#{$fluidSpace} {
+      #{$mod}: #{$value}!important;
     }
   }
 }
 
 // Margin/Padding for x/y
 @each $mod, $shortMod in $mods {
-  @each $space, $value in $spaces {
-    .#{$shortMod}-x-#{$space} {
+  @each $fluidSpace, $value in $fluidSpaces {
+    .#{$shortMod}-x-#{$fluidSpace} {
       #{$mod}-left: $value;
       #{$mod}-right: $value;
     }
-    .#{$shortMod}-y-#{$space} {
-      #{$mod}-top: $value;
-      #{$mod}-bottom: $value;
+    .#{$shortMod}-y-#{$fluidSpace} {
+      #{$mod}-top: #{$value}!important;
+      #{$mod}-bottom: #{$value}!important;
     }
   }
 }
@@ -115,9 +117,9 @@ $sides: (
 // Margin/Padding for individual sides
 @each $mod, $shortMod in $mods {
   @each $side, $shortSide in $sides {
-    @each $space, $value in $spaces {
-      .#{$shortMod}-#{$shortSide}-#{$space} {
-        #{$mod}-#{$side}: $value;
+    @each $fluidSpace, $value in $fluidSpaces {
+      .#{$shortMod}-#{$shortSide}-#{$fluidSpace} {
+        #{$mod}-#{$side}: #{$value}!important;
       }
     }
   }
@@ -126,23 +128,23 @@ $sides: (
 // Border Radius
 @each $radius, $value in $radii {
   .rounded-#{$radius} {
-    border-radius: #{$value};
+    border-radius: #{$value}!important;
   }
   .rounded-top-#{$radius} {
-    border-top-left-radius: #{$value};
-    border-top-right-radius: #{$value};
+    border-top-left-radius: #{$value}!important;
+    border-top-right-radius: #{$value}!important;
   }
   .rounded-right-#{$radius} {
-    border-top-right-radius: #{$value};
-    border-bottom-right-radius: #{$value};
+    border-top-right-radius: #{$value}!important;
+    border-bottom-right-radius: #{$value}!important;
   }
   .rounded-bottom-#{$radius} {
-    border-bottom-left-radius: #{$value};
-    border-bottom-right-radius: #{$value};
+    border-bottom-left-radius: #{$value}!important;
+    border-bottom-right-radius: #{$value}!important;
   }
   .rounded-left-#{$radius} {
-    border-top-left-radius: #{$value};
-    border-top-right-radius: #{$value};
+    border-top-left-radius: #{$value}!important;
+    border-top-right-radius: #{$value}!important;
   }
 }
 
@@ -150,80 +152,80 @@ $sides: (
 
 .info {
 
-  background: var(--gradient-medium-blue);
-  color: #fff;
-  border: 1px solid var(--blue-400);
+  background: var(--gradient-medium-blue)!important;
+  color: #fff!important;
+  border: 1px solid var(--blue-400)!important;
 
   &.secondary {
-    background: transparent;
-    color: #fff;
-    border: 2px solid var(--blue-400);
+    background: transparent!important;
+    color: #fff!important;
+    border: 2px solid var(--blue-400)!important;
   }
 
   &.tertiary {
-    background: transparent;
-    color: var(--blue-600);
-    border: none;
+    background: transparent!important;
+    color: var(--blue-600)!important;
+    border: none!important;
   }
 
 }
 
 .success {
 
-  background: var(--gradient-medium-green);
-  color: #fff;
-  border: 1px solid var(--green-400);
+  background: var(--gradient-medium-green)!important;
+  color: #fff!important;
+  border: 1px solid var(--green-400)!important;
 
   &.secondary {
-    background: transparent;
-    color: #fff;
-    border: 2px solid var(--green-400);
+    background: transparent!important;
+    color: #fff!important;
+    border: 2px solid var(--green-400)!important;
   }
 
   &.tertiary {
-    background: transparent;
-    color: var(--green-600);
-    border: none;
+    background: transparent!important;
+    color: var(--green-600)!important;
+    border: none!important;
   }
 
 }
 
 .warning {
 
-  background: var(--gradient-medium-yellow);
-  color: #fff;
-  border: 1px solid var(--yellow-400);
+  background: var(--gradient-medium-yellow)!important;
+  color: #fff!important;
+  border: 1px solid var(--yellow-400)!important;
 
   &.secondary {
-    background: transparent;
-    color: #fff;
-    border: 2px solid var(--yellow-400);
+    background: transparent!important;
+    color: #fff!important;
+    border: 2px solid var(--yellow-400)!important;
   }
 
   &.tertiary {
-    background: transparent;
-    color: var(--yellow-600);
-    border: none;
+    background: transparent!important;
+    color: var(--yellow-600)!important;
+    border: none!important;
   }
 
 }
 
 .danger {
 
-  background: var(--gradient-medium-red);
-  color: #fff;
-  border: 1px solid var(--red-400);
+  background: var(--gradient-medium-red)!important;
+  color: #fff!important;
+  border: 1px solid var(--red-400)!important;
 
   &.secondary {
-    background: transparent;
-    color: #fff;
-    border: 2px solid var(--red-400);
+    background: transparent!important;
+    color: #fff!important;
+    border: 2px solid var(--red-400)!important;
   }
 
   &.tertiary {
-    background: transparent;
-    color: var(--red-600);
-    border: none;
+    background: transparent!important;
+    color: var(--red-600)!important;
+    border: none!important;
   }
 
 }
