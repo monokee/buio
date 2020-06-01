@@ -18,8 +18,10 @@
 $mods: (
   "width": "w",
   "height": "h",
-  "max-width": "mw",
-  "max-height": "mh"
+  "max-width": "max-w",
+  "max-height": "max-h",
+  "min-width": "min-w",
+  "min-height": "min-h"
 );
 
 @each $mod, $shortMod in $mods {
