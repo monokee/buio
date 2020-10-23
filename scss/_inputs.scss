@@ -114,7 +114,8 @@ input[type=color] {
 // Autofill
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   outline: 0;
   -webkit-box-shadow: 0 0 0 999px hsla(220, 35%, 29%, 0.35) inset!important;
   -webkit-text-fill-color: var(--blue-800)!important;
@@ -326,8 +327,13 @@ label.file {
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-    padding: 10.5px;
+    padding: 10.5px 18px;
     color: var(--neutral-500);
+    font-size: var(--font-size-000);
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &::after { // browse button
@@ -336,7 +342,9 @@ label.file {
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 10.5px;
+    padding: 10.5px 15px;
+    font-weight: 400;
+    font-size: var(--font-size-100);
     color: #fff;
     background: var(--gradient-medium-blue);
   }

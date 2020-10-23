@@ -344,6 +344,9 @@ sub,
 small {
   font-size: var(--font-size-000); }
 
+small {
+  line-height: 1; }
+
 pre,
 code,
 kbd,
@@ -580,7 +583,8 @@ input[type=color] {
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
   outline: 0;
   -webkit-box-shadow: 0 0 0 999px rgba(48, 65, 100, 0.35) inset !important;
   -webkit-text-fill-color: var(--blue-800) !important;
@@ -639,6 +643,12 @@ label {
   -webkit-transition-duration: var(--duration-200);
           transition-duration: var(--duration-200); }
 
+.input-field input[placeholder]:not(:-moz-placeholder-shown) ~ label {
+  transform: scale(0.82) translateY(-14px); }
+
+.input-field input[placeholder]:not(:-ms-input-placeholder) ~ label {
+  transform: scale(0.82) translateY(-14px); }
+
 .input-field:focus-within input[placeholder] ~ label,
 .input-field input:not([placeholder]) ~ label,
 .input-field input[placeholder]:not(:placeholder-shown) ~ label,
@@ -661,6 +671,12 @@ label {
   opacity: 0; }
 
 .input-field input:not(:focus):not(:only-child):not(:last-child):placeholder-shown::-ms-input-placeholder {
+  opacity: 0; }
+
+.input-field input:not(:focus):not(:only-child):not(:last-child):-moz-placeholder-shown::placeholder {
+  opacity: 0; }
+
+.input-field input:not(:focus):not(:only-child):not(:last-child):-ms-input-placeholder::placeholder {
   opacity: 0; }
 
 .input-field input:not(:focus):not(:only-child):not(:last-child):placeholder-shown::placeholder {
@@ -799,8 +815,13 @@ label.file {
         -ms-flex-pack: start;
             justify-content: flex-start;
     height: 100%;
-    padding: 10.5px;
-    color: var(--neutral-500); }
+    padding: 10.5px 18px;
+    color: var(--neutral-500);
+    font-size: var(--font-size-000);
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
   label.file::after {
     content: var(--button, "Browse");
     display: -webkit-box;
@@ -813,7 +834,9 @@ label.file {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100%;
-    padding: 10.5px;
+    padding: 10.5px 15px;
+    font-weight: 400;
+    font-size: var(--font-size-100);
     color: #fff;
     background: var(--gradient-medium-blue); }
 
@@ -1180,11 +1203,7 @@ input[type=reset],
   border-radius: var(--radius-100);
   background-color: var(--neutral-100);
   border: 1px solid var(--neutral-150);
-  color: var(--neutral-fff);
-  margin: 0 0.75em; }
-  .badge.pill {
-    border-radius: var(--radius-full);
-    padding: 0.35em 0.75em; }
+  color: var(--neutral-fff); }
 
 .flex-row,
 .flex-col {
@@ -1403,6 +1422,15 @@ input[type=reset],
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.small {
+  font-size: 0.75rem; }
+
+.very-small {
+  font-size: 0.65rem; }
+
+.tiny {
+  font-size: 0.5rem; }
 
 svg {
   width: var(--font-size-300);
