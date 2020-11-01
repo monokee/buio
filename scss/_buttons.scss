@@ -111,6 +111,8 @@ input[type=reset],
       background: #fff;
       border-radius: 50%;
       transform-origin: 50%;
+      transform: scale(1);
+      will-change: transform;
       animation: btn-pulse 1.25s infinite var(--curve-fade-out);
     }
   }
@@ -129,7 +131,7 @@ input[type=reset],
 
 @keyframes btn-pulse {
   0% {
-    transform: scale(0);
+    transform: scale(0.1);
   }
   100% {
     transform: scale(1.0);

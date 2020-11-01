@@ -21,27 +21,20 @@
     flex-wrap: wrap-reverse;
   }
 
-  .self-fit {
+  .flex-fit {
+    flex: 1 1 0%;
+  }
+  .flex-auto {
     flex: 1 1 auto;
   }
-  .self-grow {
-    flex: 1 0 auto;
-  }
-  .self-shrink {
+  .flex-shrink {
     flex: 0 1 auto;
   }
-
-  .push-top {
-    margin-top: auto;
+  .flex-grow {
+    flex: 1 0 auto;
   }
-  .push-right {
-    margin-right: auto;
-  }
-  .push-bottom {
-    margin-bottom: auto;
-  }
-  .push-left {
-    margin-left: auto;
+  .no-flex {
+    flex: none;
   }
 
 }

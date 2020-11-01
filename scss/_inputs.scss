@@ -32,6 +32,13 @@ $textInputs:
   -webkit-appearance: none;
 }
 
+input::selection,
+input::-moz-selection {
+  background: var(--blue-400);
+  color: var(--neutral-fff);
+  text-shadow: none;
+}
+
 fieldset {
   border: 0;
   padding: var(--space-200) 0;
@@ -79,6 +86,15 @@ select {
     color: var(--neutral-500);
   }
 
+}
+
+// Search Input
+input[type=search] {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%238C92A0' d='M11.44 10.73l4.41 4.42a.5.5 0 1 1-.7.7l-4.42-4.41a6.5 6.5 0 1 1 .7-.7v-.01zM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z'></path></svg>");
+  background-repeat: no-repeat;
+  background-position: 14px 15px;
+  background-size: 17px;
+  padding-left: 42px;
 }
 
 // Number Input

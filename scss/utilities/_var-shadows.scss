@@ -1,19 +1,14 @@
 $shadows: (
 
-  "100": (0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)),
-  "100-inset": (inset 0 1px 3px rgba(0,0,0,0.12), inset 0 1px 2px rgba(0,0,0,0.24)),
+  "xs": (0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)),
 
-  "200": (0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12)),
-  "200-inset": (inset 0 3px 6px rgba(0,0,0,0.15), inset 0 2px 4px rgba(0,0,0,0.12)),
+  "s": (0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12)),
 
-  "300": (0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.1)),
-  "300-inset": (inset 0 10px 20px rgba(0,0,0,0.15), inset 0 3px 6px rgba(0,0,0,0.1)),
+  "m": (0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.1)),
 
-  "400": (0 15px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05)),
-  "400-inset": (inset 0 15px 25px rgba(0,0,0,0.15), inset 0 5px 10px rgba(0,0,0,0.05)),
+  "l": (0 15px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05)),
 
-  "500": 0 20px 40px rgba(0,0,0,0.20),
-  "500-inset": inset 0 20px 40px rgba(0,0,0,0.20)
+  "xl": 0 20px 40px rgba(0,0,0,0.20)
 
 );
 
