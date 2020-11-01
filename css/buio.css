@@ -1787,11 +1787,11 @@ input[type=reset],
   display: grid;
   grid-gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(var(--min-col-width), var(--max-col-width)));
-  grid-template-rows: repeat(auto-fit, minmax(var(--min-row-height), var(--max-row-height)));
+  grid-auto-rows: minmax(var(--min-row-height), var(--max-row-height));
   --min-col-width: 256px;
   --max-col-width: 1fr;
   --min-row-height: 256px;
-  --max-row-height: 1fr;
+  --max-row-height: 100%;
   --grid-gap: 1.563rem; }
   .grid.gap-xxs {
     --grid-gap: 0.512rem; }
