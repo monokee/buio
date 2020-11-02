@@ -21,16 +21,16 @@ nav {
   &.flex-row {
     a, a:visited {
       height: 100%;
-      padding-left: var(--space-200);
-      padding-right: var(--space-200);
+      padding-left: var(--space-150);
+      padding-right: var(--space-150);
     }
   }
 
   &.flex-col {
     a, a:visited {
       width: 100%;
-      padding-top: var(--space-200);
-      padding-bottom: var(--space-200);
+      padding-top: var(--space-150);
+      padding-bottom: var(--space-150);
     }
   }
 
