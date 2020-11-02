@@ -12,7 +12,34 @@
   pointer-events: auto!important;
 }
 
-/* Layout Modifiers */
+/* Overflow */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-auto {
+  overflow: overlay;
+  overflow: auto;
+}
+.overflow-x-auto {
+  overflow-x: overlay;
+  overflow-x: auto;
+}
+.overflow-y-auto {
+  overflow-y: overlay;
+  overflow-y: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+/* Position */
 
 .pos-rel {
   position: relative!important;
@@ -43,7 +70,7 @@
   }
 }
 
-/* Size Modifiers */
+/* (Min/Max) Width, (Min/Max) Height Modifiers */
 
 $mods: (
   "width": "w",
@@ -54,42 +81,35 @@ $mods: (
   "min-height": "min-h"
 );
 
-@each $mod, $shortMod in $mods {
+@each $name, $shortName in $mods {
 
-  // Percentage based sizes
-  .#{$shortMod}-full {
-    #{$mod}: 100%!important;
+  // Percentage based
+  .#{$shortName}-full {
+    #{$name}: 100%!important;
   }
-  .#{$shortMod}-half {
-    #{$mod}: 50%!important;
+  .#{$shortName}-half {
+    #{$name}: 50%!important;
   }
-  .#{$shortMod}-third {
-    #{$mod}: 33.3333333333%!important;
+  .#{$shortName}-third {
+    #{$name}: 33.3333333333%!important;
   }
-  .#{$shortMod}-fourth {
-    #{$mod}: 25%!important;
+  .#{$shortName}-fourth {
+    #{$name}: 25%!important;
   }
-  .#{$shortMod}-fifth {
-    #{$mod}: 20%!important;
+  .#{$shortName}-fifth {
+    #{$name}: 20%!important;
   }
 
-  // spacing based sizes
-  @each $space, $value in $spaces {
-    .#{$shortMod}-#{$space} {
-      #{$mod}: #{$value}!important;
+  // Fluid based
+  @each $fluidName, $fluidValue in $fluidSpaces {
+    .#{$shortName}-#{$fluidName} {
+      #{$name}: #{$fluidValue}!important;
     }
   }
 
 }
 
-/* Special Screen-size based max-width modifiers */
-@each $screenWidth, $value in $screenSizes {
-  .max-w-#{$screenWidth} {
-    max-width: #{$value}!important;
-  }
-}
-
-/* Spacing Modifiers */
+/* Margin/Padding Modifiers */
 
 $mods: (
   "margin": "mg",
