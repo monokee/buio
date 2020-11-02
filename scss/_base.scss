@@ -89,7 +89,6 @@ hr {
 table {
   border-collapse: collapse;
   width: 100%;
-  text-align: center;
 }
 
 thead,
@@ -97,10 +96,6 @@ tfoot {
   background: var(--neutral-150);
   color: var(--neutral-900);
   font-size: var(--font-size-000);
-}
-
-td {
-  padding: var(--font-size-000);
 }
 
 tbody tr:nth-child(even) {

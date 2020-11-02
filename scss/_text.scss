@@ -27,19 +27,29 @@ html {
   white-space: nowrap;
 }
 .underline {
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 .no-underline {
-  text-decoration: none;
+  text-decoration: none!important;
 }
 .user-select-text {
-  user-select: text;
+  user-select: text!important;
 }
 .user-select-all {
-  user-select: all;
+  user-select: all!important;
 }
 .user-select-none {
-  user-select: none;
+  user-select: none!important;
+}
+
+.align-right {
+  text-align: right!important;
+}
+.align-left {
+  text-align: left!important;
+}
+.align-center {
+  text-align: center!important;
 }
 
 /* Font Modifiers */
