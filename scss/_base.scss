@@ -94,8 +94,15 @@ table {
 thead,
 tfoot {
   background: var(--neutral-150);
-  color: var(--neutral-900);
   font-size: var(--font-size-000);
+}
+
+th, td {
+  padding: var(--font-size-000);
+}
+
+th {
+  color: var(--neutral-900);
 }
 
 tbody tr:nth-child(even) {
