@@ -89,6 +89,7 @@ hr {
 table {
   border-collapse: collapse;
   width: 100%;
+  text-align: left;
 }
 
 thead,
@@ -98,6 +99,7 @@ tfoot {
 }
 
 th, td {
+  text-align: left;
   padding: var(--font-size-000);
 }
 
