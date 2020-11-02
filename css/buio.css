@@ -819,13 +819,13 @@ nav a, nav a:visited {
 
 nav.flex-row a, nav.flex-row a:visited {
   height: 100%;
-  padding-left: var(--space-150);
-  padding-right: var(--space-150); }
+  padding-left: var(--space-125);
+  padding-right: var(--space-125); }
 
 nav.flex-col a, nav.flex-col a:visited {
   width: 100%;
-  padding-top: var(--space-150);
-  padding-bottom: var(--space-150); }
+  padding-top: var(--space-125);
+  padding-bottom: var(--space-125); }
 
 input::-moz-selection {
   background: var(--blue-400);
