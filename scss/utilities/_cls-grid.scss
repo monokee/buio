@@ -162,4 +162,27 @@
     --max-row-height: 1024px;
   }
 
+  // alignment and justification
+  &.center {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &.x-left { justify-content: flex-start }
+  &.x-right { justify-content: flex-end }
+  &.x-center { justify-content: center }
+  &.x-around { justify-content: space-around }
+  &.x-between { justify-content: space-between }
+  &.x-evenly { justify-content: space-evenly }
+
+  &.y-top { align-items: flex-start; align-content: flex-start; }
+  &.y-center { align-items: center; align-content: center; }
+  &.y-bottom { align-items: flex-end; align-content: flex-end; }
+  &.y-around { align-items: center; align-content: space-around; }
+  &.y-between { align-items: center; align-content: space-between; }
+  &.y-evenly { align-items: center; align-content: space-evenly; }
+  &.y-stretch { align-items: stretch; align-content: stretch; }
+  &.y-baseline { align-items: baseline; align-content: flex-start; }
+
 }
