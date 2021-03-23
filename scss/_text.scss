@@ -111,7 +111,7 @@ html {
 }
 
 body, p {
-  line-height: 1.5rem;
+  line-height: $baseLine;
 }
 
 a, a:visited {
