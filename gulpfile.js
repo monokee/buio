@@ -1,4 +1,4 @@
-const {task, src, dest, series} = require('gulp');
+const {task, src, dest, series, parallel} = require('gulp');
 const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');

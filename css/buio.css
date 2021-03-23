@@ -352,6 +352,9 @@ html {
   text-align: center !important; }
 
 /* Font Modifiers */
+.text-xxs, .text-xs, .text-s, .text-m, .text-l, .text-xl, .text-xxl {
+  line-height: 1.2; }
+
 .text-xxs {
   font-size: 0.5rem; }
 
@@ -593,6 +596,9 @@ html {
 .text-blue-fff {
   color: #eaedf1 !important; }
 
+.text-black {
+  color: black !important; }
+
 .text-neutral-000 {
   color: #0c0c0e !important; }
 
@@ -658,6 +664,9 @@ html {
 
 .text-neutral-fff {
   color: #ededed !important; }
+
+.text-white {
+  color: white !important; }
 
 body, p {
   line-height: 1.5rem; }
@@ -1247,8 +1256,8 @@ input[type=reset],
   outline: 0;
   color: #fff;
   background: var(--gradient-medium-blue);
-  -webkit-box-shadow: var(--shadow-100);
-          box-shadow: var(--shadow-100);
+  -webkit-box-shadow: var(--shadow-s);
+          box-shadow: var(--shadow-s);
   line-height: inherit;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -1473,8 +1482,8 @@ input[type=reset],
   color: var(--tooltip-color);
   background: var(--tooltip-background);
   border-radius: var(--radius-100);
-  -webkit-box-shadow: var(--shadow-100);
-          box-shadow: var(--shadow-100);
+  -webkit-box-shadow: var(--shadow-s);
+          box-shadow: var(--shadow-s);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2011,6 +2020,27 @@ svg {
 .pointer-events-auto {
   pointer-events: auto !important; }
 
+/* Object-fit */
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill; }
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none; }
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down; }
+
 /* Overflow */
 .overflow-hidden {
   overflow: hidden; }
@@ -2048,6 +2078,16 @@ svg {
 
 .pos-fixed {
   position: fixed !important; }
+
+/* Display */
+.block {
+  display: block !important; }
+
+.none {
+  display: none !important; }
+
+.inline-block {
+  display: inline-block; }
 
 /* Background Colors */
 .bg-red-000 {
@@ -2245,6 +2285,9 @@ svg {
 .bg-blue-fff {
   background-color: #eaedf1 !important; }
 
+.bg-black {
+  background-color: black !important; }
+
 .bg-neutral-000 {
   background-color: #0c0c0e !important; }
 
@@ -2310,6 +2353,9 @@ svg {
 
 .bg-neutral-fff {
   background-color: #ededed !important; }
+
+.bg-white {
+  background-color: white !important; }
 
 /* Shadows */
 .shadow-xs {
@@ -4594,6 +4640,7 @@ svg {
   --blue-900: #cce3ff;
   --blue-950: #d6e9ff;
   --blue-fff: #eaedf1;
+  --black: black;
   --neutral-000: #0c0c0e;
   --neutral-050: #101113;
   --neutral-100: #121317;
@@ -4616,6 +4663,7 @@ svg {
   --neutral-900: #d8d9d9;
   --neutral-950: #e4e4e4;
   --neutral-fff: #ededed;
+  --white: white;
   --gradient-dark-red: linear-gradient(135deg, var(--red-000) 0%, var(--neutral-000) 100%);
   --gradient-dark-purple: linear-gradient(135deg, var(--purple-000) 0%, var(--neutral-000) 100%);
   --gradient-dark-green: linear-gradient(135deg, var(--green-000) 0%, var(--neutral-000) 100%);

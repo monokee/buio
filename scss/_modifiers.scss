@@ -4,12 +4,28 @@
 @import "utilities/cls-svg";
 
 /* Pointer Events */
-
 .pointer-events-none {
   pointer-events: none!important;
 }
 .pointer-events-auto {
   pointer-events: auto!important;
+}
+
+/* Object-fit */
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-fill {
+  object-fit: fill;
+}
+.object-none {
+  object-fit: none;
+}
+.object-scale-down {
+  object-fit: scale-down;
 }
 
 /* Overflow */
@@ -40,7 +56,6 @@
 }
 
 /* Position */
-
 .pos-rel {
   position: relative!important;
 }
@@ -54,8 +69,18 @@
   position: fixed!important;
 }
 
-/* Background Colors */
+/* Display */
+.block {
+  display: block!important;
+}
+.none {
+  display: none!important;
+}
+.inline-block {
+  display: inline-block;
+}
 
+/* Background Colors */
 @each $color, $value in $colors {
   .bg-#{$color} {
     background-color: #{$value}!important;
@@ -63,7 +88,6 @@
 }
 
 /* Shadows */
-
 @each $size, $value in $shadows {
   .shadow-#{$size} {
     box-shadow: #{$value}!important;
@@ -71,7 +95,6 @@
 }
 
 /* (Min/Max) Width, (Min/Max) Height Modifiers */
-
 $mods: (
   "width": "w",
   "height": "h",
@@ -82,7 +105,6 @@ $mods: (
 );
 
 @each $name, $shortName in $mods {
-
   // Percentage based
   .#{$shortName}-full {
     #{$name}: 100%!important;
@@ -110,7 +132,6 @@ $mods: (
 }
 
 /* Margin/Padding Modifiers */
-
 $mods: (
   "margin": "mg",
   "padding": "pd"
