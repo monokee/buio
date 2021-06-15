@@ -1,7 +1,9 @@
-svg {
+@import "../utilities/variables";
 
-  width: var(--font-size-300);
-  height:var(--font-size-300);
+.svg {
+
+  width: #{map-get($fontSizes, "300")};
+  height: #{map-get($fontSizes, "300")};
   stroke-width: 1em;
   stroke: currentColor;
   fill: currentColor;

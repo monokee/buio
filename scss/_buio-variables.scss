@@ -1,0 +1,40 @@
+@import "utilities/variables";
+
+:root {
+
+  // FONT SIZES
+  @each $fontSize, $value in $fontSizes {
+    --font-size-#{$fontSize}: #{$value};
+  }
+
+  // SPACE
+  @each $space, $value in $fluidSpaces {
+    --space-#{$space}: #{$value};
+  }
+
+  // SHADOWS
+  @each $shadow, $value in $shadows {
+    --shadow-#{$shadow}: #{$value};
+  }
+
+  // RADII
+  @each $radius, $value in $radii {
+    --radius-#{$radius}: #{$value};
+  }
+
+  // CURVES
+  @each $curve, $value in $curves {
+    --curve-#{$curve}: #{$value};
+  }
+
+  // COLORS
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+
+  // GRADIENTS
+  @each $gradient, $value in $gradients {
+    --gradient-#{$gradient}: #{$value};
+  }
+
+}

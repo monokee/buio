@@ -1,58 +1,9 @@
-@import "utilities/variables";
-@import "utilities/functions";
-@import "reset";
-@import "base";
-@import "text";
-@import "navigation";
-@import "inputs";
-@import "scrollbar";
-@import "buttons";
-@import "tooltips";
-@import "badges";
-@import "modifiers"; // should come last bc specificity
+@import "buio-variables";
 
-// Create Variables
+@import "core/reset";
 
-:root {
+@import "core/base";
 
-  // FONT TYPES
-  --font-type-sans: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-type-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-type-mono: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@import "buio-components";
 
-  // FONT SIZES
-  @each $fontSize, $value in $fontSizes {
-    --font-size-#{$fontSize}: #{$value};
-  }
-
-  // SPACE
-  @each $space, $value in $fluidSpaces {
-    --space-#{$space}: #{$value};
-  }
-
-  // SHADOWS
-  @each $shadow, $value in $shadows {
-    --shadow-#{$shadow}: #{$value};
-  }
-
-  // RADII
-  @each $radius, $value in $radii {
-    --radius-#{$radius}: #{$value};
-  }
-
-  // CURVES
-  @each $curve, $value in $curves {
-    --curve-#{$curve}: #{$value};
-  }
-
-  // COLORS
-  @each $color, $value in $colors {
-    --#{$color}: #{$value};
-  }
-
-  // GRADIENTS
-  @each $gradient, $value in $gradients {
-    --gradient-#{$gradient}: #{$value};
-  }
-
-}
+@import "buio-modifiers";

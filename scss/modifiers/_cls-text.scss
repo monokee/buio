@@ -1,0 +1,97 @@
+@import "../utilities/variables";
+
+.font-sans {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+}
+.font-serif {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.font-mono {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.trunc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.underline {
+  text-decoration: underline!important;
+}
+.no-underline {
+  text-decoration: none!important;
+}
+.user-select-text {
+  user-select: text!important;
+}
+.user-select-all {
+  user-select: all!important;
+}
+.user-select-none {
+  user-select: none!important;
+}
+
+.align-right {
+  text-align: right!important;
+}
+.align-left {
+  text-align: left!important;
+}
+.align-center {
+  text-align: center!important;
+}
+
+/* Font Modifiers */
+.text-xxs {
+  font-size: 0.5rem;
+}
+.text-xs {
+  font-size: 0.65rem;
+}
+.text-s {
+  font-size: 0.75rem;
+}
+.text-m {
+  font-size: 1rem;
+}
+.text-l {
+  font-size: 1.25rem;
+}
+.text-xl {
+  font-size: 1.875rem;
+}
+.text-xxl {
+  font-size: 3rem;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-normal {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+.text-extrabold {
+  font-weight: 800;
+}
+.text-fat {
+  font-weight: 900;
+}
+
+/* Font Colors */
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: #{$value}!important;
+  }
+}

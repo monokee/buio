@@ -1,0 +1,52 @@
+@import "../utilities/variables";
+
+/* Border Radius */
+@each $radius, $value in $radii {
+  .rounded-#{$radius} {
+    border-radius: #{$value}!important;
+  }
+  .rounded-top-#{$radius} {
+    border-top-left-radius: #{$value}!important;
+    border-top-right-radius: #{$value}!important;
+  }
+  .rounded-right-#{$radius} {
+    border-top-right-radius: #{$value}!important;
+    border-bottom-right-radius: #{$value}!important;
+  }
+  .rounded-bottom-#{$radius} {
+    border-bottom-left-radius: #{$value}!important;
+    border-bottom-right-radius: #{$value}!important;
+  }
+  .rounded-left-#{$radius} {
+    border-top-left-radius: #{$value}!important;
+    border-top-right-radius: #{$value}!important;
+  }
+}
+
+/* Border Styles */
+.border-all,
+.border-top,
+.border-right,
+.border-bottom,
+.border-left {
+  border-style: var(--border-style)!important;
+  border-color: var(--border-color)!important;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #{map-get($colors, "neutral-350")};
+}
+.border-all {
+  border-width: var(--border-width)!important;
+}
+.border-top {
+  border-top-width: var(--border-width)!important;
+}
+.border-right {
+  border-right-width: var(--border-width)!important;
+}
+.border-bottom {
+  border-bottom-width: var(--border-width)!important;
+}
+.border-left {
+  border-left-width: var(--border-width)!important;
+}

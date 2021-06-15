@@ -1,0 +1,104 @@
+@import "../utilities/variables";
+
+/* (Min/Max) Width, (Min/Max) Height Modifiers */
+$mods: (
+    "width": "w",
+    "height": "h",
+    "max-width": "max-w",
+    "max-height": "max-h",
+    "min-width": "min-w",
+    "min-height": "min-h"
+);
+
+@each $name, $shortName in $mods {
+  // Percentage based
+  .#{$shortName}-full {
+    #{$name}: 100%!important;
+  }
+  .#{$shortName}-half {
+    #{$name}: 50%!important;
+  }
+  .#{$shortName}-third {
+    #{$name}: 33.3333333333%!important;
+  }
+  .#{$shortName}-fourth {
+    #{$name}: 25%!important;
+  }
+  .#{$shortName}-fifth {
+    #{$name}: 20%!important;
+  }
+
+  // Fluid based
+  @each $fluidName, $fluidValue in $fluidSpaces {
+    .#{$shortName}-#{$fluidName} {
+      #{$name}: #{$fluidValue}!important;
+    }
+  }
+
+}
+
+/* Margin/Padding Modifiers */
+$mods: (
+    "margin": "mg",
+    "padding": "pd"
+);
+
+$sides: (
+    "top": "t",
+    "right": "r",
+    "bottom": "b",
+    "left": "l"
+);
+
+// Margin auto classes
+.mg-auto {
+  margin: auto!important;
+}
+.mg-x-auto {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+.mg-y-auto {
+  margin-top: auto!important;
+  margin-bottom: auto!important;
+}
+
+@each $side, $shortSide in $sides {
+  .mg-#{$shortSide}-auto {
+    margin-#{$side}: auto!important;
+  }
+}
+
+// Margin/Padding for all sides
+@each $mod, $shortMod in $mods {
+  @each $fluidSpace, $value in $fluidSpaces {
+    .#{$shortMod}-#{$fluidSpace} {
+      #{$mod}: #{$value}!important;
+    }
+  }
+}
+
+// Margin/Padding for x/y
+@each $mod, $shortMod in $mods {
+  @each $fluidSpace, $value in $fluidSpaces {
+    .#{$shortMod}-x-#{$fluidSpace} {
+      #{$mod}-left: $value!important;
+      #{$mod}-right: $value!important;
+    }
+    .#{$shortMod}-y-#{$fluidSpace} {
+      #{$mod}-top: #{$value}!important;
+      #{$mod}-bottom: #{$value}!important;
+    }
+  }
+}
+
+// Margin/Padding for individual sides
+@each $mod, $shortMod in $mods {
+  @each $side, $shortSide in $sides {
+    @each $fluidSpace, $value in $fluidSpaces {
+      .#{$shortMod}-#{$shortSide}-#{$fluidSpace} {
+        #{$mod}-#{$side}: #{$value}!important;
+      }
+    }
+  }
+}

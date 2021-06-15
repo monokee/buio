@@ -1,4 +1,4 @@
-@import "utilities/variables";
+@import "../utilities/variables";
 
 :root {
   --tooltip-height: calc(2em + var(--font-size-000)); // padding y + font-size

@@ -1,0 +1,25 @@
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-auto {
+  overflow: overlay;
+  overflow: auto;
+}
+.overflow-x-auto {
+  overflow-x: overlay;
+  overflow-x: auto;
+}
+.overflow-y-auto {
+  overflow-y: overlay;
+  overflow-y: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}

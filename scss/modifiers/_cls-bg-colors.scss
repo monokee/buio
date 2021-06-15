@@ -1,0 +1,8 @@
+@import "../utilities/variables";
+
+/* Background Colors */
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: #{$value}!important;
+  }
+}
