@@ -1,2 +1,7 @@
+@import "utilities/variables";
 @import "buio-variables";
 @import "buio-modifiers";
+
+html {
+  @include fluid-type(font-size, $minFont, $maxFont);
+}

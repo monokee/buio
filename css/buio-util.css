@@ -3409,3 +3409,12 @@
 
 .text-white {
   color: white !important; }
+
+html {
+  font-size: 16px; }
+  @media screen and (min-width: 512px) {
+    html {
+      font-size: calc(0.28409vw + 14.54545px); } }
+  @media screen and (min-width: 1920px) {
+    html {
+      font-size: 20px; } }
