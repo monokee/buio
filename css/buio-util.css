@@ -3418,3 +3418,75 @@ html {
   @media screen and (min-width: 1920px) {
     html {
       font-size: 20px; } }
+
+h1 {
+  font-size: 22px;
+  line-height: 22px; }
+  @media screen and (min-width: 512px) {
+    h1 {
+      font-size: calc(3.19602vw + 5.63636px);
+      line-height: calc(3.19602vw + 5.63636px); } }
+  @media screen and (min-width: 1920px) {
+    h1 {
+      font-size: 67px;
+      line-height: 67px; } }
+
+h2 {
+  font-size: 21px;
+  line-height: 21px; }
+  @media screen and (min-width: 512px) {
+    h2 {
+      font-size: calc(2.05966vw + 10.45455px);
+      line-height: calc(2.05966vw + 10.45455px); } }
+  @media screen and (min-width: 1920px) {
+    h2 {
+      font-size: 50px;
+      line-height: 50px; } }
+
+h3 {
+  font-size: 19px;
+  line-height: 19px; }
+  @media screen and (min-width: 512px) {
+    h3 {
+      font-size: calc(1.34943vw + 12.09091px);
+      line-height: calc(1.34943vw + 12.09091px); } }
+  @media screen and (min-width: 1920px) {
+    h3 {
+      font-size: 38px;
+      line-height: 38px; } }
+
+h4 {
+  font-size: 18px;
+  line-height: 18px; }
+  @media screen and (min-width: 512px) {
+    h4 {
+      font-size: calc(0.71023vw + 14.36364px);
+      line-height: calc(0.71023vw + 14.36364px); } }
+  @media screen and (min-width: 1920px) {
+    h4 {
+      font-size: 28px;
+      line-height: 28px; } }
+
+h5 {
+  font-size: 17px;
+  line-height: 17px; }
+  @media screen and (min-width: 512px) {
+    h5 {
+      font-size: calc(0.28409vw + 15.54545px);
+      line-height: calc(0.28409vw + 15.54545px); } }
+  @media screen and (min-width: 1920px) {
+    h5 {
+      font-size: 21px;
+      line-height: 21px; } }
+
+h6 {
+  font-size: 16px;
+  line-height: 16px; }
+  @media screen and (min-width: 512px) {
+    h6 {
+      font-size: calc(0.14205vw + 15.27273px);
+      line-height: calc(0.14205vw + 15.27273px); } }
+  @media screen and (min-width: 1920px) {
+    h6 {
+      font-size: 18px;
+      line-height: 18px; } }
