@@ -3412,16 +3412,15 @@
   color: white !important; }
 
 html {
-  font-size: 16px;
-  line-height: 16px; }
-  @media screen and (min-width: 512px) {
-    html {
-      font-size: calc(0.28409vw + 14.54545px);
-      line-height: calc(0.28409vw + 14.54545px); } }
-  @media screen and (min-width: 1920px) {
-    html {
-      font-size: 20px;
-      line-height: 20px; } }
+  line-height: 1.2; }
+  html {
+    font-size: 16px; }
+    @media screen and (min-width: 512px) {
+      html {
+        font-size: calc(0.28409vw + 14.54545px); } }
+    @media screen and (min-width: 1920px) {
+      html {
+        font-size: 20px; } }
 
 h1 {
   font-size: 22px;

@@ -6,7 +6,8 @@
 @import "buio-modifiers";
 
 html {
-  @include fluid-type(font-size line-height, $minFont, $maxFont);
+  @include fluid-type(font-size, $minFont, $maxFont);
+  line-height: 1.2;
 }
 
 h1 {
