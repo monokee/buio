@@ -8,7 +8,7 @@ nav {
     opacity: 1;
     background-color: rgba(0,0,0,0);
     transition-property: opacity, background-color;
-    transition-duration: var(--duration-100);
+    transition-duration: 150ms;
     will-change: opacity, background-color;
 
     &:hover {

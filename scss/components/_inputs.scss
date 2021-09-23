@@ -53,7 +53,7 @@ textarea {
     color: var(--neutral-700);
     opacity: 0.3;
     transition-property: opacity;
-    transition-duration: var(--duration-100);
+    transition-duration: 150ms;
   }
 
   &:active,
@@ -189,7 +189,7 @@ label {
   transform-origin: bottom left;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-  transition-duration: var(--duration-200);
+  transition-duration: 200ms;
 }
 
 .input-field:focus-within input[placeholder] ~ label,
@@ -234,7 +234,7 @@ textarea {
     font-size: 16px;
     line-height: 1.5;
     color: var(--neutral-500);
-    transition: color var(--duration-100) linear;
+    transition: color 150ms linear;
     opacity: 1;
 
     &::before { // Bullet

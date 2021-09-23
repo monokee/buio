@@ -1,35 +1,5 @@
-@import "utilities/variables";
-
 /* Buio Utility Classes and Variables */
 
+@import "core/reset";
 @import "buio-variables";
 @import "buio-modifiers";
-
-html {
-  @include fluid-type(font-size, $minFont, $maxFont);
-  line-height: 1.2;
-}
-
-h1 {
-  @include fluid-type(font-size line-height, $h1-min, $h1-max);
-}
-
-h2 {
-  @include fluid-type(font-size line-height, $h2-min, $h2-max);
-}
-
-h3 {
-  @include fluid-type(font-size line-height, $h3-min, $h3-max);
-}
-
-h4 {
-  @include fluid-type(font-size line-height, $h4-min, $h4-max);
-}
-
-h5 {
-  @include fluid-type(font-size line-height, $h5-min, $h5-max);
-}
-
-h6 {
-  @include fluid-type(font-size line-height, $h6-min, $h6-max);
-}

@@ -42,7 +42,6 @@ $percentages: (
   "third": 33.3333333%,
   "fourth": 25%,
   "fifth": 20%,
-  "screen": 100vw,
   "min": min-content,
   "max": max-content
 );
@@ -60,6 +59,17 @@ $percentages: (
   @each $fluidName, $fluidValue in $fluidSpaces {
     .#{$shortName}-#{$fluidName} {
       #{$name}: #{$fluidValue}!important;
+    }
+  }
+
+  // Screen based
+  @if (str-index($name, 'width')) {
+    .#{$shortName}-screen {
+      #{$name}: 100vw!important;
+    }
+  } @else {
+    .#{$shortName}-screen {
+      #{$name}: 100vh!important;
     }
   }
 

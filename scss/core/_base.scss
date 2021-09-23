@@ -1,77 +1,32 @@
 @import "../utilities/variables";
 
 html {
-  @include fluid-type(font-size, $minFont, $maxFont);
   background: var(--neutral-250);
   color: var(--neutral-600);
-  touch-action: manipulation;
-  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI", "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  user-select: none;
-}
-
-body, p {
-  line-height: $baseLine;
-}
-
-a, a:visited {
-  position: relative;
-  touch-action: manipulation;
-  color: var(--neutral-fff);
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity var(--duration-100);
-  &:hover {
-    text-decoration: none;
-    opacity: 0.75;
-  }
-  &:focus {
-    text-decoration: underline;
-    border: 0;
-    outline: 0;
-    opacity: 0.75;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  color: var(--neutral-fff);
+  color: white;
 }
 
-h1 > img, h1 > svg, h2 > img, h2 > svg, h3 > img, h3 > svg, h4 > img, h4 > svg, h5 > img, h5 > svg, h6 > img, h6 > svg {
-  height: 1em;
-  width: 1em;
-  vertical-align: sub;
+a, a:visited {
+  color: var(--neutral-fff);
 }
 
 strong, b {
   color: var(--neutral-800);
 }
 
-b,
-strong {
-  font-weight: bolder;
+mark {
+  background: var(--gradient-medium-blue);
+  color: var(--neutral-fff);
 }
 
-sup,
-sub,
-small {
-  font-size: var(--font-size-000);
-}
-
-small {
-  line-height: 1;
-}
-
-pre,
-code,
-kbd,
-samp  {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
+::selection,
+::-moz-selection {
+  background: var(--blue-400);
+  color: var(--neutral-fff);
+  text-shadow: none;
 }
 
 article, .vertical-flow {
@@ -87,42 +42,6 @@ article, .vertical-flow {
     margin-top: $baseLine * 2;
   }
 
-}
-
-h1 {
-  @include fluid-type(font-size line-height, $h1-min, $h1-max);
-}
-
-h2 {
-  @include fluid-type(font-size line-height, $h2-min, $h2-max);
-}
-
-h3 {
-  @include fluid-type(font-size line-height, $h3-min, $h3-max);
-}
-
-h4 {
-  @include fluid-type(font-size line-height, $h4-min, $h4-max);
-}
-
-h5 {
-  @include fluid-type(font-size line-height, $h5-min, $h5-max);
-}
-
-h6 {
-  @include fluid-type(font-size line-height, $h6-min, $h6-max);
-}
-
-mark {
-  background: var(--gradient-medium-blue);
-  color: var(--neutral-fff);
-}
-
-::selection,
-::-moz-selection {
-  background: var(--blue-400);
-  color: var(--neutral-fff);
-  text-shadow: none;
 }
 
 pre {
